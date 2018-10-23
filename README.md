@@ -5,8 +5,6 @@ This repository was made for the app developed from Meteorizon team as a submiss
 
 To build the application follow the steps below:
 
-Open a command line inside the folder and execute: npm install
-
 Execute: node server.js
 
 Open a browser on the address http://localhost:8080/Apps/Meteoreach.html
