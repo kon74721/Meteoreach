@@ -35,34 +35,7 @@
 //var timeline = new Cesium.Timeline(viewer, clock);
 viewer.clock = clock;
 	//zoomTo(startTime, stopTime)
-//var kmlOptions = {
-//camera : viewer.scene.camera,
-//canvas : viewer.scene.canvas,
-//clampToGround : true
-//
-//oad geocache points of interest from a KML file
-//ata from : http://catalog.opendata.city/dataset/pediacities-nyc-neighborhoods/resource/91778048-3c58-449c-a3f9-365ed203e914
-//geocachePromise = Cesium.KmlDataSource.load('sampleGeocacheLocations.kml', kmlOptions);
-//
-//
-//
-//dd geocache billboard entities to scene and style them
-//achePromise.then(function(dataSource) {
-//// Add the new data as entities to the viewer
-//viewer.dataSources.add(dataSource);
-//
-//// Get the array of entities
-//var geocacheEntities = dataSource.entities.values;
-//
-//for (var i = 0; i < geocacheEntities.length; i++) {
-//    var entity = geocacheEntities[i];
-//    if (Cesium.defined(entity.billboard)) {
-//        // Entity styling code here
-//    }
-//}
-//
-//
-//
+
 //dd geocache billboard entities to scene and style them
 //
 //    if (Cesium.defined(entity.billboard)) {
@@ -133,41 +106,6 @@ neighborhoodsPromise.then(function(dataSource) {
     }
 });
 
-// entity styling code here
-
-// Use geojson neighborhood value as entity name
-//entity.name = entity.properties.neighborhood;
-
-// entity styling code here
-
-// Set the polygon material to a random, translucent color.
-//entity.polygon.material = Cesium.Color.fromRandom({
-    //red : 0.8,
-    //maximumGreen : 0.1,
-    //minimumBlue : 0.1,
-    //alpha : 0.6
-//});
-
-// Tells the polygon to color the terrain. ClassificationType.CESIUM_3D_TILE will color the 3D tileset, and ClassificationType.BOTH will color both the 3d tiles and terrain (BOTH is the default)
-//entity.polygon.classificationType = Cesium.ClassificationType.TERRAIN;
-
-// entity styling code here
-
-// Generate Polygon position
-//var polyPositions = entity.polygon.hierarchy.getValue(Cesium.JulianDate.now()).positions;
-//var polyCenter = Cesium.BoundingSphere.fromPoints(polyPositions).center;
-//polyCenter = Cesium.Ellipsoid.WGS84.scaleToGeodeticSurface(polyCenter);
-//entity.position = polyCenter;
-// Generate labels
-//entity.label = {
-    //text : entity.name,
-    //showBackground : true,
-    //scale : 0.6,
-    //horizontalOrigin : Cesium.HorizontalOrigin.CENTER,
-    //verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
-    //distanceDisplayCondition : new Cesium.DistanceDisplayCondition(10.0, 8000.0),
-    //disableDepthTestDistance : 100.0
-//};
 
   </script>
 </body>
